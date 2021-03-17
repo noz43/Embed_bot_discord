@@ -1,7 +1,7 @@
 Client.on("message", message => { // ne pas toucher 
         if (message.author.bot) return; // ne pas toucher 
         if (message.content == prefix + "nom de la commande") { // mettre le nom de la commande exemple ("help") help sera ajouter avec le prefix que vous donnerez a votre bot moi c'est ,help.
-            if (message.member.hasPermission("ADMINISTRATOR")) {
+            if (message.member.hasPermission("ADMINISTRATOR")) { // ne pas toucher
 
                 var embed = new Discord.MessageEmbed()
                     .setTitle("titre") // titre pour l'embed
